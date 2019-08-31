@@ -171,7 +171,7 @@ Turtle.init = function() {
   if (location.hash.length < 2 &&
       !BlocklyGames.loadFromLocalStorage(BlocklyGames.NAME,
                                          BlocklyGames.LEVEL)) {
-    setTimeout(Turtle.showHelp, 1000);
+    // setTimeout(Turtle.showHelp, 1000);
     if (BlocklyGames.LEVEL == 9) {
       setTimeout(BlocklyDialogs.abortOffer, 5 * 60 * 1000);
     }
